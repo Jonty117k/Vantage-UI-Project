@@ -1,0 +1,830 @@
+		#faq-search {
+			position: absolute;
+			width: 180px;
+			right: 20px;
+			top: -34px;
+			border-radius: 25px;
+			border: 1px solid gray;
+			padding: 6px;
+			background-repeat: no-repeat;
+  			background-image: url('../img/search.png');
+  			background-size: 15px;
+  			background-position: 90%;
+		}
+		.faq-entry {
+			margin-bottom: 10px;
+		}
+		.last-item {
+			border: none;
+		}
+		#faq-container {
+			position: relative;
+			bottom: 10px;
+			margin: 10px;
+		}	
+		#contact-container {
+			position: relative;
+			bottom: 50px;
+		}
+		.add-btn {
+			font-size: 19px;
+			position: relative;
+			left: 25px;
+		}
+		.add-btn:hover {
+			filter: brightness(0) invert(1);
+		}
+		.del-btn {
+			height: 12px;
+			position: relative;
+			left: 25px;
+		}
+		.del-btn:hover {
+			filter: brightness(0) invert(1);
+		}
+		.opt:hover {
+			opacity: .7;
+		}
+		.noSelect {
+		  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+		     -khtml-user-select: none; /* Konqueror HTML */
+		       -moz-user-select: none; /* Firefox */
+		        -ms-user-select: none; /* Internet Explorer/Edge */
+		            user-select: none; /* Non-prefixed version, currently*/			
+		}
+		.admin-title {
+			color: #16827c;
+			font-family: arial;
+			transform: scaleX(.95);
+			font-size: 19px;
+			font-weight: 900;
+		}
+		.faq-title {
+			color: #16827c;
+			font-family: arial;
+			font-size: 17px;
+			font-weight: 900;
+		}
+		.log-r-col {
+			position: relative;
+			right: 50px;
+		}
+		.log-l-col {
+			font-weight: bold; 
+			color: #636363;
+		}
+		.admin-l-col {
+			font-weight: bold; 
+			color: #636363;
+		}
+		.admin-r-col {
+			position: relative;
+		}
+		.add-r-col {
+			position: relative;
+			right: 50px;
+		}
+		.add-l-col {
+			position: relative;
+			right: 50px;
+		}		
+		#admin-info {
+			margin: 20px;
+		}
+		.admin-table {
+		  font-size: 14px;
+		  border-collapse: collapse;
+		  width: 90%;
+		  font-family: arial;
+		  margin-left: 25px;
+		}
+		.faq-table {
+		  font-size: 14px;
+		  border-collapse: collapse;
+		  width: 95%;
+		  font-family: arial;
+		  margin-left: 25px;
+
+		}
+		th, td {
+		  padding-bottom: 5px;	
+		  padding-top: 5px;			
+		  padding-right: 100px;
+		  text-align: left;
+		  border-bottom: 1px solid #ddd;
+		}	
+		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		  color: black;
+		  opacity: .4; /* Firefox */
+		}
+		#tag-icon1 {
+			height: 20px;
+			position: absolute;
+			z-index: 2;
+			margin: 17px;
+			padding-left: 10px;
+		}
+		.selectHover:hover {
+			background-image: linear-gradient(0deg, rgba(31,202,186,1) 0%, rgba(3,150,137,1) 92%);
+		}
+		.selectHover-1:hover {
+			filter:brightness(1.05);
+		}
+
+		.input-container {
+		  display: -ms-flexbox; /* IE10 */
+		  display: flex;
+		  width: 502px;
+		  margin-left: 25px;
+		  margin-top: 15px;
+		  color: gray;
+		}
+
+		.tag-icon {
+		  padding: 17px;
+		  background: #19b3a4;
+		  color: white;
+		  min-width: 40px;
+		  text-align: center;
+		  font-family: arial;
+		  border-top-right-radius: 4px;
+		  border-bottom-right-radius: 4px;	
+		  cursor: pointer;	  
+		}
+
+		.input-field {
+		  color: gray;
+		  width: 100%;
+		  padding-left: 64px;
+		  outline: none;
+		  font-weight: bold;
+		  position: relative;
+		  border-top-left-radius: 4px;
+		  border-bottom-left-radius: 4px;
+		  border: 1.5px solid #e0e0e0;
+		  border-right: none;
+		  font-family: arial;
+		  font-size: 14px;
+
+		}
+
+		.input-field:focus {
+		  border: 2px solid dodgerblue;
+		}
+
+		.btn:hover {
+		  opacity: 1;
+		}
+		#cal-txt {
+			color: #595959;
+			font-family: arial;
+			font-weight: bolder;
+			position: relative;
+			bottom: 21px;
+			left: 65px;	
+		}
+		#date {
+			color: #595959;
+			font-family: arial;
+			font-size: 17px;	
+			position: relative;
+			float: right;
+			bottom: 71px;
+			right: 80px;				
+		}
+		#cal-btn {
+			height: 52px;
+			width: 56px;
+			bottom: 76px;
+			left: 105px;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			position: relative;
+			float: right;
+			background-color: #19b3a4;
+			cursor: pointer;
+		}
+		#cal-icon {
+			height: 20px;
+			width: 20px;
+		}
+		#cal-icon1 {
+			height: 20px;
+			width: 20px;
+			position: relative;
+			top: 15px;
+			left: 25px;
+		}		
+		#calendar {
+			height: 50px;
+			width: 500px;
+			background-color: white;
+			margin-left: 25px;
+			margin-top: 15px;
+			border: 1.5px solid #e0e0e0;
+			border-radius: 4px;
+		}
+		#admin-container {
+			min-height: 375px;
+			width: 500px;
+			background-color: white;
+			margin-left: 25px;
+			margin-top: 15px;
+			border: 1.5px solid #e0e0e0;
+			border-radius: 4px;
+		}		
+		.row {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  width: 100%;
+		}
+		.column {
+		  display: flex;
+		  flex-direction: column;
+		  flex-basis: 100%;
+		  flex: 1;
+		}
+		#search-nav {
+			height: 50px;
+			background-color: #36404a;
+		}
+		#search-input {
+			width: 180px;
+			height: 23px;
+			border: 0px;
+			position: relative;
+			top: 12px;
+			left: 20px;
+			color: white;
+			background-color: #4b535e;
+			border-radius: 100px;
+		}
+		#ticket-nav {
+			height: 60px;
+			background-color: #19b3a4;
+			text-align: center;
+			font-family: arial;
+			font-weight: bold;
+			font-size: 22px;
+		}
+		.tkt {
+			height: 50px;
+			width: 220px;			
+		}		
+		.tkt-act {
+			background-color: #edf3f2;
+			color: #19b3a4;
+			position: relative;
+			top: 10px;
+			cursor: pointer;
+		}
+		.tkt-pass {
+			background-color: #0e978d;
+			color: #0b7168;
+			position: relative;
+			top: 10px;
+			cursor: pointer;
+		}
+		.add-ticket {
+			background-color: #0c8b80;
+		}
+		.center {
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    width: 40%;
+		    height: 50%;
+		    margin: auto;
+		    cursor: pointer; 
+		}
+
+		.txt {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    width: 50%;
+		    height: 50%;
+		    margin: auto;
+		}
+		.txt1 {
+			position: relative;
+			bottom: 7px;
+			color: white;
+			opacity: .7;			
+		}
+		.txt2 {
+			height: 30%;
+		}
+		.txt3 {
+			top: 4px;
+			font-size: 15px;
+		}
+		#bg {
+			background-color: #edf3f2;
+		}
+		#content-container {
+			position: relative;
+			background-color: white;
+			border: 1px solid #e0e0e0;
+			min-height: 642px;
+			min-width: 900px;
+			margin-left: 25px;
+			margin-top: 90px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		.tab {
+			border: 1px solid #e0e0e0;
+			border-bottom: none;
+			background-color: white;
+			color: #b7b7b7;
+			font-family: arial;
+			font-weight: bold;
+			text-align: center;
+			font-size: 18px;
+			height: 55px;
+			width: 220px;
+			cursor: pointer;
+			position: relative;
+			bottom: 57px;
+			right: 1px;
+		}
+		.tab:hover {
+			filter: brightness(1.03);
+		}
+		.tab-act {
+			background-color: white;
+		}
+		.tab-pass {
+			background-color: #efefef;
+		}
+		#msg-title {
+			position: relative;
+			left: 25px;
+			bottom: 53px;
+			color: #16827c;
+			font-family: arial;
+			transform: scaleX(.95);
+			font-size: 19px;
+			font-weight: 900;
+		}
+		#msg-bloc {
+			width: 95%;
+			height: 190px;
+			position: relative;
+			bottom: 55px;
+			font-size: 14px;
+			font-family: sans-serif;
+			background-color: #f2f7f3;
+			margin-left: auto;
+			margin-right: auto;
+			font-weight: bold;
+			color: #6f6f6f;
+			border-radius: 4px;
+			border: 1.5px solid #e0e0e0;
+		}
+		#msg-txt {
+			margin: 20px;
+
+		}
+		#time-stamp {
+			position: relative;
+			bottom: 10px;
+			color: #b1b1b1;
+			font-size: 12px;
+			float: right;
+			font-weight: 100;
+		}
+		#msg-btn-row {
+		}
+		.reply-btn {
+			height: 40px;
+			width: 47px;
+			background-color: #19b3a4;
+			border-radius: 4px;
+			cursor: pointer;
+			position: absolute;
+			right: 237px;
+
+		}
+		.btn:hover {
+		  	background-image: linear-gradient(0deg, rgba(31,202,186,1) 0%, rgba(3,150,137,1) 92%);
+		}
+		.btn:active {
+			margin-top: 1px;
+		}
+		.forward-btn {
+			height: 40px;
+			width: 47px;
+			background-color: #19b3a4;
+			border-radius: 4px;
+			cursor: pointer;
+			position: absolute;
+			right: 185px;
+		}
+		#comment-btn {
+			height: 40px;
+			width: 160px;
+			background-color: #19b3a4;
+			border-radius: 4px;
+			cursor: pointer;
+			position: absolute;
+			right: 20px;
+			text-align: center;
+			color: white;
+		}
+		#reply-img {
+			height: 20px;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+		#forward-img {
+			height: 20px;
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    margin: auto;
+		}
+		#clip-icon {
+			height: 20px;
+			right: 40px;
+			top: 20px;
+			position: absolute;
+			cursor: pointer;
+		}
+		#options-table {
+			color: #595959;
+			font-weight: bold;
+			font-family: arial;
+			width: 500px;
+			background-color: white;
+			position: relative;
+			margin-left: 25px;
+			margin-top: 90px;
+			border-radius: 4px;
+			border: 1.5px solid #e0e0e0;			
+		}
+		.opt-img {
+			height: 15px;
+			width: 15px;
+			margin-right: 12px;
+		}
+		.options {
+			margin: 10px;
+		}
+		#top-row {
+			border-bottom: 1px solid #e0e0e0;
+			padding-bottom: 15px;
+		}
+		.right-column {
+			border-left: 1px solid #e0e0e0;
+		}
+		html {
+			margin: -8px;
+			width: 100vw;
+			height: 100vh;
+		}
+		body {
+			background-color: #edf3f2;
+		}
+
+		@media screen and (max-width: 1550px) {
+			.tkt {
+				width: 200px;
+			}
+			#ticket-nav {
+				font-size: 20px;
+			}
+			.tab {
+				width: 200px;
+				font-size: 16px;
+			}
+			#content-container {
+				min-width: 820px;
+			}
+			#msg-bloc {
+				width: 740px;
+				font-size: 12px;
+			}
+			#msg-title {
+				font-size: 17px;
+			}
+			.admin-title {
+				font-size: 17px;
+			}
+			.admin-table {
+				font-size: 12px;
+			}			
+			th, td {
+			  padding-right: 80px;
+			}	
+			#faq-title {
+				font-size: 15px;
+			}	
+			#options-table, #calendar {
+				width: 450px;
+				font-size: 14px;
+			}	
+			.input-container {
+				width: 452px;
+			}
+			#cal-btn {
+				bottom: 70px;
+			}
+			#admin-container {
+				width: 450px;
+			}
+		@media screen and (max-width: 1360px) {
+			.tkt {
+				width: 180px;
+			}
+			#ticket-nav {
+				font-size: 18px;
+			}
+			.tab {
+				width: 180px;
+				font-size: 14px;
+			}
+			#content-container {
+				min-width: 780px;
+			}
+			#msg-bloc {
+				width: 700px;
+				font-size: 12px;
+			}
+			#msg-title {
+				font-size: 16px;
+			}
+			.admin-title {
+				font-size: 16px;
+			}
+			.admin-table {
+				font-size: 12px;
+			}			
+			th, td {
+			  padding-right: 80px;
+			}	
+			#faq-title {
+				font-size: 14px;
+			}	
+			#options-table, #calendar {
+				width: 400px;
+				font-size: 14px;
+			}	
+			.input-container {
+				width: 402px;
+			}
+			#cal-btn {
+				bottom: 70px;
+			}
+			#admin-container {
+				width: 400px;
+			}
+		@media screen and (max-width: 1360px) {
+			.tkt {
+				width: 160px;
+			}
+			#ticket-nav {
+				font-size: 16px;
+			}
+			.tab {
+				width: 160px;
+				font-size: 14px;
+			}
+			#content-container {
+				min-width: 700px;
+			}
+			#msg-bloc {
+				width: 640px;
+				font-size: 12px;
+			}
+			#msg-title {
+				font-size: 16px;
+			}
+			.admin-title {
+				font-size: 16px;
+			}
+			.admin-table {
+				font-size: 12px;
+			}			
+			th, td {
+			  padding-right: 80px;
+			  padding-top: 0px;
+			}	
+			#faq-title {
+				font-size: 14px;
+			}	
+			#options-table, #calendar {
+				width: 350px;
+				font-size: 14px;
+			}	
+			.input-container {
+				width: 352px;
+			}
+			#cal-btn {
+				bottom: 70px;
+				left: 75px;
+			}
+			#admin-container {
+				width: 350px;
+			}
+			.log-r-col {
+				right: 0px;
+			}
+			.txt {
+				width: auto;
+			}
+			.center {
+				width: auto;
+			}
+			#date {
+				font-size: 12px;
+				bottom: 60px;
+				right: 70px;
+			}
+			#cal-text {
+				font-size: 12px;
+			}
+		}
+		@media screen and (max-width: 1150px) {
+			.tkt {
+				width: 140px;
+			}
+			#ticket-nav {
+				font-size: 16px;
+			}
+			.tab {
+				width: 140px;
+				font-size: 14px;
+			}
+			#content-container {
+				min-width: 600px;
+			}
+			#msg-bloc {
+				width: 550px;
+				font-size: 12px;
+			}
+			#msg-title {
+				font-size: 16px;
+			}
+			.admin-title {
+				font-size: 16px;
+			}
+			.admin-table {
+				font-size: 12px;
+			}			
+			th, td {
+			  padding-right: 80px;
+			  padding-top: 0px;
+			}	
+			#faq-title {
+				font-size: 14px;
+			}	
+			#options-table, #calendar {
+				width: 300px;
+				font-size: 14px;
+			}	
+			.input-container {
+				width: 302px;
+			}
+			#cal-btn {
+				bottom: 70px;
+				left: 75px;
+			}
+			#admin-container {
+				width: 300px;
+			}
+			.log-r-col {
+				right: 0px;
+			}
+			.txt {
+				width: auto;
+			}
+			.center {
+				width: auto;
+			}
+			#date {
+				font-size: 12px;
+				bottom: 60px;
+				right: 70px;
+			}
+			#cal-text {
+				font-size: 12px;
+			}
+		}		
+		@media screen and (max-width: 960px) {
+			.tkt {
+				width: 140px;
+			}
+			#ticket-nav {
+				font-size: 16px;
+			}
+			.tab {
+				width: 140px;
+				font-size: 14px;
+			}
+			#content-container {
+				min-width: 100vw;
+				min-height: auto;
+				margin-left: 0px;
+			}
+			#msg-bloc {
+				width: 90%;
+				height: 220px;
+				font-size: 14px;
+			}
+			#msg-title {
+				font-size: 16px;
+			}
+			.admin-title {
+				font-size: 16px;
+			}
+			.admin-table {
+				font-size: 12px;
+			}			
+			th, td {
+			  padding-right: 80px;
+			  padding-top: 0px;
+			}	
+			#faq-title {
+				font-size: 14px;
+			}	
+			#calendar {
+				height: 50px;
+				width: 100%;
+				background-color: white;
+				margin-left: 0px;
+				margin-top: 10px;
+				border: 1.5px solid #e0e0e0;
+				border-radius: 4px;
+			}
+			.input-container {
+			  display: -ms-flexbox; /* IE10 */
+			  display: flex;
+			  width: 100%;
+			  margin-left: 0px;
+			  margin-top: 10px;
+			  color: gray;
+			}
+			#cal-btn {
+				bottom: 70px;
+				left: 75px;
+			}
+			#admin-container {
+				min-height: 375px;
+				width: 100%;
+				background-color: white;
+				margin-left: 0px;
+				margin-top: 10px;
+				border: 1.5px solid #e0e0e0;
+				border-radius: 4px;
+			}		
+			.log-r-col {
+				right: 0px;
+			}
+			.txt {
+				width: auto;
+			}
+			.center {
+				width: auto;
+			}
+			#date {
+				font-size: 12px;
+				bottom: 60px;
+				right: 70px;
+			}
+			#cal-text {
+				font-size: 12px;
+			}
+			#options-table {
+				color: #595959;
+				font-weight: bold;
+				font-family: arial;
+				width: 100%;
+				background-color: white;
+				position: relative;
+				margin-left: 0px; 
+				margin-top: 10px;
+				border-radius: 4px;
+				border: 1.5px solid #e0e0e0;
+			}
+		}				
+		@media screen and (max-width: 760px) {
+			.tkt {
+				width: 100px;
+			}
+		}
+	}	
+}

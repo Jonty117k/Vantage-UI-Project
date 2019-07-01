@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vantage UI Project</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+</head>
+<body>
+	<!-- The System of Rows and Columns are Flexbox classes... 
+	They basically funtion like bootstrap rows and columns -->
+	<!-- Nav Bar w/ Search Input -->
+	<div class="row" id="search-nav">
+		<input id="search-input">
+	</div>
+
+	<!-- Nav Bar for Ticket Switching -->
+	<div class="row" id="ticket-nav">
+		<div class="tkt tkt-act">
+			<p class="noSelect txt">Ticket 1 
+				<img class="del-btn" alt="delete button" src="img/x.png">					
+			</p>
+		</div>
+		<div class="tkt tkt-pass selectHover">
+			<p class="noSelect txt">Ticket 2 
+				<img class="del-btn" alt="delete button" src="img/x.png">					
+			</p>
+		</div>
+		<div class="tkt tkt-pass selectHover">
+			<p class="noSelect txt">Ticket 3 
+				<img class="del-btn" alt="delete button" src="img/x.png">					
+			</p>
+		</div>
+		<div class="tkt tkt-pass add-ticket selectHover">
+			<p class="noSelect txt1">Add New 
+				<span class="add-btn">
+					&#43;
+				</span>
+			</p>
+		</div>
+	</div>
+
+	<!-- Main Viewing Area of the App  -->
+	<div class="row" id="bg">
+		<div class="row">
+			<div class="column">
+
+			<!-- Content Box with Message, Contact and FAQ Tabs -->
+				<div id="content-container">
+					<div class="row">
+						<!-- Clicking on These Tabs Switches Content -->
+						<div class="msg noSelect tab tab-act">
+							<span class="txt txt2">Message</span>
+						</div>
+						<div class="contact noSelect tab tab-pass">
+							<span class="txt txt2">Contact Info</span>
+						</div>
+						<div class="faq noSelect tab tab-pass">
+							<span class="txt txt2">FAQ</span>
+						</div>
+					</div>
+
+					<!-- Message Content -->
+					<div id="msg-container">
+						<div class="row">
+							<h1 id="msg-title">
+								Help! Issues Logging In
+							</h1>
+							<img id="clip-icon" alt="paper clip" src="img/clip.png">
+						</div>
+						<div class="row">
+							<div id="msg-bloc">
+								<p id="msg-txt">
+									Hello Support, <br> <span id="time-stamp">March 08, 2017 2:03pm</span>
+									<br>
+									I am unable to login to my account. I tried resetting my password but I still cannot login. Can you please help? <br>
+									<br>
+									Thank You, <br>
+									Customer
+								</p>
+								<div class="column"></div>
+								<div class="column">
+									<div class="row" id="msg-btn-row">
+										<div class="noSelect btn reply-btn">
+											<img id="reply-img" alt="reply button" src="img/reply.png">
+										</div>
+										<div class="noSelect btn forward-btn">
+											<img id="forward-img" alt="forward button" src="img/forward.png">
+										</div>
+										<div class="noSelect btn" id="comment-btn">
+											<span class="txt txt3">
+												Comment
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Contact Content -->
+					<div id="contact-container">
+						  <h1 class="admin-title">
+							  Contact
+					      </h1>	
+						<table class="admin-table">
+						  <tr>
+						    <td class="admin-l-col">Name</td>
+						    <td class="admin-r-col">John Doe</td>
+							<td class="admin-l-col">Department</td>
+						    <td class="admin-r-col">Sales</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">Email</td>
+						    <td class="admin-r-col">johndoe@gmail.com</td>
+							<td class="admin-l-col">Reports To</td>
+						    <td class="admin-r-col">Ashley</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">Phone</td>
+						    <td class="admin-r-col">123.456.7890</td>
+							<td class="admin-l-col">Notify Owner</td>
+						    <td class="admin-r-col">No</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">Account</td>
+						    <td class="admin-r-col">Deer Funds</td>
+							<td class="admin-l-col">Modified</td>
+						    <td class="admin-r-col">Yesterday</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">Title</td>
+						    <td class="admin-r-col">1 Hour</td>
+							<td class="admin-l-col">Created</td>
+						    <td class="admin-r-col">March 02, 2017</td>
+						  </tr>
+						</table>
+						  <h1 class="admin-title">
+							Address Information
+						  </h1>
+						<table class="admin-table">	
+						  <tr>
+						    <td class="admin-l-col">Street</td>
+						    <td class="add-r-col">1 Broad Street</td>
+							<td class="add-l-col">PO Box</td>
+						    <td class="add-r-col">1300</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">City</td>
+						    <td class="add-r-col">Philadelphia</td>
+							<td class="add-l-col">State</td>
+						    <td class="add-r-col">PA</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-l-col">Postal Code</td>
+						    <td class="add-r-col">19103</td>
+							<td class="add-l-col">Country</td>
+						    <td class="add-r-col">US</td>
+						  </tr>
+						</table>	
+						  <h1 class="admin-title">
+							Trouble Ticket History
+						  </h1>
+						<table class="admin-table">	
+						  <tr>
+						    <td class="admin-l-col">Name</td>
+						    <td class="admin-l-col">Status</td>
+							<td class="admin-l-col">Date & Time</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-r-col">Trouble Ticket 1</td>
+						    <td class="admin-r-col">Received</td>
+							<td class="admin-r-col">Received</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-r-col">Trouble Ticket 2</td>
+						    <td class="admin-r-col">Low</td>
+							<td class="admin-r-col">Low</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-r-col">Trouble Ticket 3</td>
+						    <td class="admin-r-col">Open</td>
+							<td class="admin-r-col">Open</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-r-col">Trouble Ticket 4</td>
+						    <td class="admin-r-col">1 Hour</td>
+							<td class="admin-r-col">1 Hour</td>
+						  </tr>
+						  <tr>
+						    <td class="admin-r-col">Trouble Ticket 5</td>
+						    <td class="admin-r-col">1 Hour</td>
+							<td class="admin-r-col">1 Hour</td>
+						  </tr>
+						</table>				
+					</div>
+
+					<!-- FAQ Content -->
+					<div id="faq-container">
+						<table class="faq-table">
+						  <tr class="faq-entry">
+						    <td>
+						    	<input id="faq-search" name="search" placeholder="Search FAQs">
+						    </td>
+						  </tr>
+						</table>					
+						<table class="faq-table">
+						  <tr class="faq-entry">
+						    <td>
+							    <h1 class="faq-title">
+									What is delyte?
+							    </h1>	
+						    	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis in reprehenderit in voluptate velit esse cillum.
+						    </td>
+						  </tr>
+						  <tr class="faq-entry">
+						    <td class="">
+							    <h1 class="faq-title">
+									What are tags?
+							    </h1>	
+						    	Sed ut perspiciatis unde omnis iste natus eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						    </td>
+						  </tr>
+						  <tr class="faq-entry">
+						    <td class="">
+							    <h1 class="faq-title">
+									What is an account? 
+							    </h1>	
+						    	Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+						    </td>
+						  </tr>
+						  <tr class="faq-entry">
+						    <td class="">
+							    <h1 class="faq-title">
+									How do I assign a contact?
+							    </h1>	
+						    	At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint.
+						    </td>
+						  </tr>
+						  <tr class="faq-entry">
+						    <td class="">
+							    <h1 class="faq-title">
+									How do I set a ticket priority?
+							    </h1>	
+						    	At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+						    </td>
+						  </tr>
+						  <tr class="faq-entry">
+						    <td class="last-item">
+							    <h1 class="faq-title">
+									How do I query tickets?
+							    </h1>	
+						    	Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.
+						    </td>
+						  </tr>
+						</table>				
+					</div>					
+				</div>
+			</div>
+
+			<!-- Second Column with Options, Calendar, 
+			Tags Input, and Admin Table -->
+			<div class="column">
+				<div class="row">
+
+					<!-- Options Table: Edit, Status, Merge, FAQ -->
+					<div id="options-table">
+						<div class="row" id="top-row">
+							<div class="column options">
+								<span class="center opt noSelect">
+									<img class="opt-img" alt="edit" src="img/edit.png">Edit
+								</span>
+							</div>
+							<div class="column options right-column">
+								<span class="center opt noSelect">
+									<img class="opt-img" alt="status" src="img/status.png">Status
+								</span>
+							</div>
+						</div>
+						<div class="row options">
+							<div class="column">
+								<span class="center opt noSelect">
+									<img class="opt-img" alt="merge" src="img/merge.png">Merge
+								</span>
+							</div>
+							<div class="column options right-column">
+								<span class="center opt noSelect">
+									<img class="opt-img" alt="FAQ" src="img/faq.png">FAQ
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+					<!-- Calendar Table -->
+					<div id="calendar">
+						<img class="" id="cal-icon1" alt="calendar" src="img/calendar.png">
+						<p id="cal-txt">Follow Up</p>
+						<p id="date">April 10, 2017</p>
+						<div class="selectHover" id="cal-btn">
+							<img class="txt noSelect" id="cal-icon" alt="calendar" src="img/event.png">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+					<!-- Add Tags Input -->
+					<div class="input-container">
+						<img id="tag-icon1" alt="tag" src="img/tag.png">
+					    <input class="input-field" type="text" placeholder="Add Tags" name="usrnm">
+					    <div class="noSelect tag-icon selectHover">
+						   Add
+					    </div>
+					</div>
+				</div>
+				<div class="row">
+
+					<!-- Admin Table: Priority, Status, Type, etc...  -->
+					<div id="admin-container">
+						<h1 class="admin-title">
+						   LOGIN ISSUE
+						</h1>	
+						<table class="admin-table">
+						  <tr>
+						    <td class="log-l-col">Ticket Duration</td>
+						    <td class="log-r-col">1 Hour</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Email Thread Status</td>
+						    <td class="log-r-col">Received</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Priority</td>
+						    <td class="log-r-col">Low</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Status</td>
+						    <td class="log-r-col">Open</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Type</td>
+						    <td class="log-r-col">1 Hour</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Watchers</td>
+						    <td class="log-r-col">John Doe</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Tags</td>
+						    <td class="log-r-col">General</td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Related Account</td>
+						    <td class="log-r-col"></td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Related Contract</td>
+						    <td class="log-r-col"></td>
+						  </tr>
+						  <tr>
+						    <td class="log-l-col">Email</td>
+						    <td class="log-r-col"></td>
+						  </tr>
+						  <tr>
+						    <td class="last-item log-l-col">Assigned To</td>
+						    <td class="last-item log-r-col"></td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery code for switching between message, contact, and FAQ tabs -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
